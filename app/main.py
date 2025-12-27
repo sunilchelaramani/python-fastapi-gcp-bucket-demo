@@ -42,7 +42,7 @@ def validate_file_type(filename: str) -> None:
         )
 
 
-@app.get("/healthz")
+@app.get("/health")
 async def health_check():
     """Health check endpoint."""
     return {"status": "healthy"}
